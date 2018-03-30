@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="container">
+    <div id="book-profile">
+        <article class="book">
+            <div class="row info">
+                <div class="col-12">
+                    <p class="breadcrumb"><a href="#">Book Store</a> &gt; <a href="{{site.baseurl}}/bookstore/photobooks">Photo Books</a></p>
+                    <h1 class="title">{{ page.title | escape }}</h1>
+                    <p>by <a href="#">{{page.author}}</a></p>
+                </div>
+            </div>
+            <div class="row product">
+                <div class="col-6 image">
+                    <img src="{{site.baseurl}}{{page.cover}}">
+                </div>
+                <div class="col-6 details">
+                    <p class="type">Hardcover</p>
+                    <p class="price">{{page.price}}</p>
+                    <p>
+                        <select>
+                            <option>Hardcover</option>
+                            <option>Paperback</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button class="btn btn-primary">ADD TO CART</button>
+                        <button class="btn">INSTANT PURCHASE</button>
+                    </p>
+                    <p class="shipping">
+                        Eligible for FREE SHIPPING
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

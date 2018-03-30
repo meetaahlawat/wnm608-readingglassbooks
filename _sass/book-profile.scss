@@ -1,0 +1,28 @@
+#book-profile {
+  .book {
+    .info {
+      text-align: center;
+      .title {
+        font-size: $h2-font-size;
+        font-weight: 100;
+      }
+    }
+    .product {
+      .image {
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+      .details {
+        .type {
+          font-weight: bold;
+        }
+        .price {
+          color: $primary;
+          font-size: $font-size-lg;
+        }
+      }
+    }
+  }
+}
