@@ -1,0 +1,20 @@
+---
+title: Photobooks | Reading Glass Books
+permalink: /bookstore/photobooks/index.html
+layout: default
+---
+<div class="container">
+    <div class="row">
+        {% for item in site.photobooks %}
+        <div class="col-3">
+            <a class="card" href="{{site.baseurl}}{{ item.url }}">
+                <div class="cover" style="background-image: url('{{site.baseurl}}{{item.cover}}');"></div>
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

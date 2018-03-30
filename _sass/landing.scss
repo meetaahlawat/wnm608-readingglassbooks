@@ -1,0 +1,42 @@
+#landing-page {
+  .hero-section {
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+    .content {
+      position: absolute;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      padding-top: 10vh;
+
+      .logo {
+        margin-bottom: 40px;
+      }
+      .title {
+        text-shadow: 1px 1px #333;
+        margin-bottom: 40px;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #000, #777);
+      opacity: .4;
+    }
+  }
+}

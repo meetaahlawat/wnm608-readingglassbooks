@@ -1,0 +1,16 @@
+{
+  "navigation":[
+    {
+      "title":"Home",
+      "url": "home"
+    },
+    {
+      "title": "Book Store",
+      "url": "bookstore/photobooks"
+    },
+    {
+      "title": "Cart",
+      "url": "cart"
+    }
+  ]
+}
