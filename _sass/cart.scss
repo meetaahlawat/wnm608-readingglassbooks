@@ -1,0 +1,44 @@
+#cart{
+  .cart-title {
+    margin: 20px 0 20px 0;
+  }
+  .items {
+    width: 100%;
+    .item {
+      .item-image {
+        max-width: 100px;
+      }
+      .title {
+        margin-bottom: 5px;
+      }
+      .author {
+        font-size: $font-size-sm;
+      }
+      .quantity {
+
+      }
+    }
+  }
+  .order-summary {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $theme-light;
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      td.total {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .total-amount {
+      margin: 20px 0;
+    }
+  }
+}
+

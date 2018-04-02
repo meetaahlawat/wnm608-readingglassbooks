@@ -1,20 +1,28 @@
 #book-profile {
   .book {
     .info {
+      margin: 40px 0 20px 0;
       text-align: center;
       .title {
         font-size: $h2-font-size;
-        font-weight: 100;
+        font-weight: 200;
+      }
+      .crumbs{
+        font-size: 11px;
+        margin-bottom: 5px;
       }
     }
     .product {
       .image {
         text-align: center;
+        border-right: 1px solid $border-color;
         img {
           width: 50%;
+          @include box-shadow(2px 2px 2px $border-color)
         }
       }
       .details {
+        padding-left: 40px;
         .type {
           font-weight: bold;
         }

@@ -1,0 +1,14 @@
+.site-footer {
+  .wrapper {
+    height: 120px;
+    text-align: center;
+    background-color: lighten($theme-light, 10%);
+    padding: 40px 0;
+    p {
+      margin-bottom: 5px;
+      &.copy {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

@@ -13,12 +13,6 @@ layout: default
                 <img class="d-block w-100" src="{{site.baseurl}}/assets/images/home/carousel-2.jpg" alt="Second">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{site.baseurl}}/assets/images/home/carousel-3.jpg" alt="Third">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{{site.baseurl}}/assets/images/home/carousel-4.jpg" alt="Fourth">
-            </div>
-            <div class="carousel-item">
                 <img class="d-block w-100" src="{{site.baseurl}}/assets/images/home/carousel-5.jpg" alt="Fifth">
             </div>
         </div>
@@ -33,43 +27,22 @@ layout: default
     </div>
     <div class="container">
         <section>
-            <h3 class="title">Photography</h3>
+            <h3 class="title">
+                Photography
+                <a class="view-more" href="{{site.baseurl}}/bookstore/photobooks">(View More)</a>
+            </h3>
             <div class="row">
+                {% for item in site.photobooks limit: 3 %}
                 <div class="col-4">
-                    <div class="card">
-                        <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/cover-bresson.jpg');"></div>
+                    <a class="card" href="{{site.baseurl}}{{ item.url }}">
+                        <div class="cover" style="background-image: url('{{site.baseurl}}{{item.cover}}');"></div>
                         <div class="card-body">
-                            <h5 class="card-title">Henri Cartier-Bresson</h5>
-                            <p class="card-text">Henri Cartier-Bresson’s work embraced art, politics, revolution, and war.
-                                But more powerful than any of these overarching themes was his evident concern for the human
-                                individual at every social level.</p>
+                            <h5 class="card-title">{{item.title}}</h5>
+                            <p class="card-text">{{item.description}}</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/cover-gordon.jpg');"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Gordon Parks</h5>
-                            <p class="card-text">This compelling autobiography, first published in 1966, now back in print
-                                by popular demand and with a new foreword by Wing Young Huie, tells how Parks managed to escape
-                                the poverty and bigotry around him and to launch his distinguished career by choosing the
-                                weapons given him by "a mother who placed love, dignity, and hard work over hatred."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/cover-capa.jpg');"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Robert Capa</h5>
-                            <p class="card-text">SSusana Fortes offers a gorgeously written, English Patient-style novel
-                                about the real-life romance between two photojournalists furiously in love: Robert Capa and Gerda Taro.
-                                During the Spanish Civil War, Capa and Taro risked everything documenting Francisco Franco’s Fascist
-                                uprising—even as they risked everything for love. </p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
         <section>

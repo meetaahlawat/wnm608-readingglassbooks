@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
+<script>
+    var book = {
+        title: "{{page.title}}",
+        author: "{{page.author}}",
+        price: "{{page.price}}",
+        cover: "{{site.baseurl}}{{page.cover}}"
+    };
+</script>
 <div class="container">
     <div id="book-profile">
         <article class="book">
             <div class="row info">
                 <div class="col-12">
-                    <p class="breadcrumb"><a href="#">Book Store</a> &gt; <a href="{{site.baseurl}}/bookstore/photobooks">Photo Books</a></p>
+                    <p class="crumbs"><a href="{{site.baseurl}}/bookstore/photobooks">Book Store</a> &gt; <a href="{{site.baseurl}}/bookstore/photobooks">Photo Books</a></p>
                     <h1 class="title">{{ page.title | escape }}</h1>
                     <p>by <a href="#">{{page.author}}</a></p>
                 </div>
@@ -25,14 +33,44 @@ layout: default
                         </select>
                     </p>
                     <p>
-                        <button class="btn btn-primary">ADD TO CART</button>
-                        <button class="btn">INSTANT PURCHASE</button>
+                        <button class="btn btn-primary" id="add-to-cart">ADD TO CART</button>
                     </p>
                     <p class="shipping">
                         Eligible for FREE SHIPPING
                     </p>
+                    <p>{{page.description}}</p>
                 </div>
             </div>
         </article>
+    </div>
+</div>
+<div class="modal fade" id="add-to-cart-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Item successfully added to your cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 image-section">
+                            <img class="image">
+                        </div>
+                        <div class="col-md-8 details-section">
+                            <p class="title"></p>
+                            <p class="author"></p>
+                            <p class="price"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-primary" href="{{site.baseurl}}/cart">View Cart</a>
+            </div>
+        </div>
     </div>
 </div>

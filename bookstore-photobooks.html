@@ -3,14 +3,32 @@ title: Photobooks | Reading Glass Books
 permalink: /bookstore/photobooks/index.html
 layout: default
 ---
-<div class="container">
+<div id="bookstore" class="container">
+    <div class="row categories">
+        <div class="col-12">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link active" href="#">Arts &amp; Photography</a>
+                <a class="nav-item nav-link" href="#">Biographies &amp; Memoirs</a>
+                <a class="nav-item nav-link" href="#">Children's Books</a>
+                <a class="nav-item nav-link" href="#">Cookbooks, Food & Wine</a>
+                <a class="nav-item nav-link" href="#">History</a>
+                <a class="nav-item nav-link" href="#">Literature &amp; Fiction</a>
+                <a class="nav-item nav-link" href="#">Mystery &amp; Suspence</a>
+                <a class="nav-item nav-link" href="#">Romance</a>
+                <a class="nav-item nav-link" href="#">Si-Fi &amp; Fantasy</a>
+                <a class="nav-item nav-link" href="#">Teens &amp; Young Adult</a>
+                <a class="nav-item nav-link" href="#">Technology</a>
+                <a class="nav-item nav-link" href="#">Religion</a>
+            </nav>
+        </div>
+    </div>
     <div class="row">
         {% for item in site.photobooks %}
         <div class="col-3">
             <a class="card" href="{{site.baseurl}}{{ item.url }}">
                 <div class="cover" style="background-image: url('{{site.baseurl}}{{item.cover}}');"></div>
                 <div class="card-body">
-                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-title">{{item.title}}</p>
                     <p class="card-text">{{item.description}}</p>
                 </div>
             </a>
