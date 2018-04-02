@@ -8,23 +8,23 @@ layout: default
         <div class="col-12">
             <nav class="nav nav-pills nav-fill">
                 <a class="nav-item nav-link active" href="#">Arts &amp; Photography</a>
-                <a class="nav-item nav-link" href="#">Biographies &amp; Memoirs</a>
-                <a class="nav-item nav-link" href="#">Children's Books</a>
-                <a class="nav-item nav-link" href="#">Cookbooks, Food & Wine</a>
-                <a class="nav-item nav-link" href="#">History</a>
-                <a class="nav-item nav-link" href="#">Literature &amp; Fiction</a>
-                <a class="nav-item nav-link" href="#">Mystery &amp; Suspence</a>
-                <a class="nav-item nav-link" href="#">Romance</a>
-                <a class="nav-item nav-link" href="#">Si-Fi &amp; Fantasy</a>
-                <a class="nav-item nav-link" href="#">Teens &amp; Young Adult</a>
-                <a class="nav-item nav-link" href="#">Technology</a>
-                <a class="nav-item nav-link" href="#">Religion</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Biographies &amp; Memoirs</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Children's Books</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Cookbooks, Food & Wine</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">History</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Literature &amp; Fiction</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Mystery &amp; Suspence</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Romance</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Si-Fi &amp; Fantasy</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Teens &amp; Young Adult</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Technology</a>
+                <a class="nav-item nav-link d-none d-md-block" href="#">Religion</a>
             </nav>
         </div>
     </div>
     <div class="row">
         {% for item in site.photobooks %}
-        <div class="col-3">
+        <div class="col-md-3">
             <a class="card" href="{{site.baseurl}}{{ item.url }}">
                 <div class="cover" style="background-image: url('{{site.baseurl}}{{item.cover}}');"></div>
                 <div class="card-body">

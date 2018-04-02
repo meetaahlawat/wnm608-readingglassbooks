@@ -34,3 +34,11 @@
     }
   }
 }
+
+@include media-breakpoint-up(xs) {
+  .product {
+    .details {
+      margin-top: 20px;
+    }
+  }
+}

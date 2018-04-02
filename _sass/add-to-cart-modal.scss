@@ -5,4 +5,13 @@
       width: 100%;
     }
   }
+  @include media-breakpoint-up(xs) {
+    .image-section {
+      text-align: center;
+      .image {
+        width: 100px;
+        height: auto;
+      }
+    }
+  }
 }

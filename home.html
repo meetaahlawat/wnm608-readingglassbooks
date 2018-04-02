@@ -4,7 +4,7 @@ permalink: /home/
 layout: default
 ---
 <div class="page" id="home-page">
-    <div id="home-page-carousel" class="carousel slide" data-ride="carousel">
+    <div id="home-page-carousel" class="carousel slide d-none" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="{{site.baseurl}}/assets/images/home/carousel-1.jpg" alt="First">
@@ -33,7 +33,7 @@ layout: default
             </h3>
             <div class="row">
                 {% for item in site.photobooks limit: 3 %}
-                <div class="col-4">
+                <div class="col-md-4">
                     <a class="card" href="{{site.baseurl}}{{ item.url }}">
                         <div class="cover" style="background-image: url('{{site.baseurl}}{{item.cover}}');"></div>
                         <div class="card-body">
@@ -48,7 +48,7 @@ layout: default
         <section>
             <h3 class="title">Art</h3>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/art-cover-1.jpg');"></div>
                         <div class="card-body">
@@ -58,7 +58,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/art-cover-2.jpg');"></div>
                         <div class="card-body">
@@ -70,7 +70,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/art-cover-3.jpg');"></div>
                         <div class="card-body">
@@ -86,7 +86,7 @@ layout: default
         <section>
             <h3 class="title">History</h3>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/history-cover-1.jpg');"></div>
                         <div class="card-body">
@@ -96,7 +96,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/history-cover-2.jpg');"></div>
                         <div class="card-body">
@@ -106,7 +106,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/history-cover-3.jpg');"></div>
                         <div class="card-body">
@@ -124,7 +124,7 @@ layout: default
         <section>
             <h3 class="title">Non-Fiction</h3>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/non-fiction-cover-1.jpg');"></div>
                         <div class="card-body">
@@ -135,7 +135,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/non-fiction-cover-2.jpg');"></div>
                         <div class="card-body">
@@ -147,7 +147,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/non-fiction-cover-3.jpg');"></div>
                         <div class="card-body">
@@ -165,7 +165,7 @@ layout: default
         <section>
             <h3 class="title">Literature</h3>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/literature-cover-1.jpg');"></div>
                         <div class="card-body">
@@ -175,7 +175,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/literature-cover-2.jpg');"></div>
                         <div class="card-body">
@@ -187,7 +187,7 @@ layout: default
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="cover" style="background-image: url('{{site.baseurl}}/assets/images/books/literature-cover-3.jpg');"></div>
                         <div class="card-body">
